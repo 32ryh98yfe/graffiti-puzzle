@@ -1,8 +1,13 @@
-﻿body {
-    font-family: 'Segoe UI', Calibri, Arial;
+body {
+    font-family: 'Noto Sans KR', sans-serif; font-weight: 400;
+    /*background-color: greenyellow;*/
+    background: repeating-linear-gradient(30deg, #5eff00, #008cff 30px, #000000 30px, #000000 80px);
+    /*background: repeating-linear-gradient(-45deg, #a6fd19, #a6fd19 5px, #222222 5px, #222222 10px);*/
     margin:0;
+    padding-top:9%;
 }
 h2{
+    
     font-weight:normal;
     text-align:center;
 }
@@ -10,4 +15,14 @@ h3{
     font-weight:normal;
     margin:3px 0px;
     text-align:center;
+}
+#hide {
+    display:none; visibility:hidden;
+}
+.timeCount {
+    display:none; visibility:hidden;
+}
+
+.stepCount{
+    display:none; visibility:hidden;
 }
