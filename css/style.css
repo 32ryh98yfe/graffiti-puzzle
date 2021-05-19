@@ -1,10 +1,15 @@
+#thankyou {
+    clear: both;   
+    margin: -400 0 0 20; 
+}
+
+
 body {
     font-family: 'Noto Sans KR', sans-serif; font-weight: 400;
     /*background-color: greenyellow;*/
-    background: repeating-linear-gradient(30deg, #5eff00, #008cff 30px, #000000 30px, #000000 80px);
-    /*background: repeating-linear-gradient(-45deg, #a6fd19, #a6fd19 5px, #222222 5px, #222222 10px);*/
+    background: repeating-linear-gradient(-45deg, #a6fd19, #a6fd19 5px, #222222 5px, #222222 10px);*/
     margin:0;
-    padding-top:9%;
+    
 }
 h2{
     
@@ -26,3 +31,4 @@ h3{
 .stepCount{
     display:none; visibility:hidden;
 }
+
