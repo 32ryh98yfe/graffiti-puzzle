@@ -11,6 +11,9 @@
 </head>
 
 <body>
+    <div>
+        <button id="thankyou" type="button" type="button" class="btn" onclick="about();">About</button>
+    </div>
     <div id="collage">
         <div id="playPanel" style="padding:5px;display:none;">
             <div style="display:inline-block; margin:auto; width:95%; vertical-align:top;">
@@ -21,6 +24,7 @@
                         <input id="hide"; type="radio" name="level" id="easy" checked="checked" value="3" onchange="imagePuzzle.startGame(images, this.value);"
                     /> 
                 </div>
+               
             </div>
             <div id="gameOver" style="display:none;">
                 <div style="background-color: #ffffff; padding: 5px 10px 20px 10px; text-align: center; ">
@@ -42,11 +46,11 @@
 
         <script>
             var images = [
-                { src: 'https://user-images.githubusercontent.com/84429810/118753276-9b50b280-b89f-11eb-9709-e5ca759507df.jpg', title: 'London Bridge' },
-                { src: 'https://user-images.githubusercontent.com/84429810/118753284-9d1a7600-b89f-11eb-9782-b95c0e0db3c1.jpg', title: 'Lotus Temple' },
-                { src: 'https://user-images.githubusercontent.com/84429810/118753287-9db30c80-b89f-11eb-9513-97b9e5e8cc6d.jpg', title: 'Qutub Minar' },
-                { src: 'https://user-images.githubusercontent.com/84429810/118753288-9ee43980-b89f-11eb-97da-61b67d105120.jpg', title: 'Statue Of Liberty' },
-                { src: 'https://user-images.githubusercontent.com/84429810/118753292-9f7cd000-b89f-11eb-928d-759aba6932e2.jpg', title: 'Taj Mahal' }
+                { src: 'images/london-bridge.jpg', title: 'London Bridge' },
+                { src: 'images/lotus-temple.jpg', title: 'Lotus Temple' },
+                { src: 'images/qutub-minar.jpg', title: 'Qutub Minar' },
+                { src: 'images/statue-of-liberty.jpg', title: 'Statue Of Liberty' },
+                { src: 'images/taj-mahal.jpg', title: 'Taj Mahal' }
             ];
 
             window.onload = function () {
@@ -56,6 +60,9 @@
             function restart() {
                 var gridSize = document.querySelector('#levelPanel input[type="radio"]:checked').getAttribute('value');
                 imagePuzzle.startGame(images, gridSize);
+            }
+            function about() {
+                alert(' Developed by Anurag Gandhi. \n can be contacted at: soft.gandhi@gmail.com \n \n 퍼즐게임의 원본소스는 Anurag Gandhi가 제공하였고 \n 학교 과제목적으로 수정됐습니다');
             }
 
         </script>
