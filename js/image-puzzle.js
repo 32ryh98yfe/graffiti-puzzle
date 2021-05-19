@@ -1,4 +1,4 @@
-﻿var timerFunction;
+var timerFunction;
 
 var imagePuzzle = {
     stepCount: 0,
@@ -7,15 +7,6 @@ var imagePuzzle = {
         this.setImage(images, gridSize);
         helper.doc('playPanel').style.display = 'block';
         helper.shuffle('sortable');
-        this.stepCount = 0;
-        this.startTime = new Date().getTime();
-        this.tick();
-    },
-    tick: function () {
-        var now = new Date().getTime();
-        var elapsedTime = parseInt((now - imagePuzzle.startTime) / 1000, 10);
-        helper.doc('timerPanel').textContent = elapsedTime;
-        timerFunction = setTimeout(imagePuzzle.tick, 1000);
     },
     setImage: function (images, gridSize = 4) {
         var percentage = 100 / (gridSize - 1);
