@@ -1,0 +1,59 @@
+.map{
+    display: block;
+    position: fixed;				
+}
+.pin1{
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    left: 60rem;
+    bottom: 23rem;
+    z-index:-4
+}
+.pin2{
+    width: 3rem;
+    height: 3rem;
+    position: fixed;
+    left: 63rem;
+    bottom: 25rem;
+    z-index:-4			
+}
+#img {
+        
+        right: 0;
+        bottom: 0;
+        left: -1000%;
+        right: -1000%;
+        top: -1000%;
+        bottom: -1000%;
+        margin: auto;
+        min-height: 100%;
+        min-width: 100%;
+        min-width: 100%;
+        min-height: 100%;
+        z-index:-10;
+    }
+
+/* Flashlight Overlay */
+:root {
+    cursor: none;
+    --cursorX: 50vw;
+    --cursorY: 50vh;
+  }
+  :root:before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    pointer-events: none;
+    background: radial-gradient(
+      circle 5vmax at var(--cursorX) var(--cursorY),
+      rgba(0,0,0,0) 0%,
+      rgba(0,0,0,.5) 80%,
+      rgb(0, 0, 0) 100%
+    )
+  }
+
+/* audio */
+audio {display:none;}
