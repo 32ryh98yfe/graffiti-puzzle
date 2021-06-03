@@ -2,22 +2,124 @@
     display: block;
     position: fixed;				
 }
+/* 정보관 옥상 */
 .pin1{
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     position: fixed;
-    left: 60rem;
-    bottom: 23rem;
-    z-index:-4
+    left: 78%;
+    top: 35%;
+    z-index:-4;
+    
 }
 .pin2{
-    width: 3rem;
-    height: 3rem;
+    width: 2.5rem;
+    height: 2.5rem;
     position: fixed;
-    left: 63rem;
-    bottom: 25rem;
+    left: 75%;
+    top: 35%;
     z-index:-4			
 }
+
+/* 정보관 뒷편 */
+.pin3{
+  width: 2.5rem;
+  height: 2.5rem;
+  position: fixed;
+  left: 80%;
+  top: 27%;
+  z-index:-4			
+}
+.pin4{
+  width: 2.5rem;
+  height: 2.5rem;
+  position: fixed;
+  left: 77%;
+  top: 27%;
+  z-index:-4			
+}
+
+/* 창조관 뒷편 */
+.pin5{
+  width: 2.5rem;
+  height: 2.5rem;
+  position: fixed;
+  left: 5%;
+  top: 40%;
+  z-index:-4			
+}
+.pin6{
+  width: 2.5rem;
+  height: 2.5rem;
+  position: fixed;
+  left: 2%;
+  top: 40%;
+  z-index:-4			
+}
+
+/* 평생교육관 */
+.pin7{
+  width: 2.5rem;
+  height: 2.5rem;
+  position: fixed;
+  right: 18%;
+  bottom: 14%;
+  z-index:-4			
+}
+.pin8{
+  width: 2.5rem;
+  height: 2.5rem;
+  position: fixed;
+  right: 21%;
+  bottom: 14%;
+  z-index:-4			
+}
+
+/*디관 파홀 */
+.pin9{
+  width: 2.5rem;
+  height: 2.5rem;
+  position: fixed;
+  right: 43%;
+  top: 27%;
+  z-index:-4			
+}
+.pin10{
+  width: 2.5rem;
+  height: 2.5rem;
+  position: fixed;
+  right: 46%;
+  top: 27%;
+  z-index:-4			
+}
+
+/* warning */
+.pin20{
+  width: 2.5rem;
+  height: 2.5rem;
+  position: fixed;
+  right: 40%;
+  top: 27%;
+  z-index:-4			
+}
+.pin21{
+  width: 2.5rem;
+  height: 2.5rem;
+  position: fixed;
+  right: 70%;
+  top: 40%;
+  z-index:-4			
+}
+.pin22{
+  width: 2.5rem;
+  height: 2.5rem;
+  position: fixed;
+  right: 80%;
+  bottom: 28%;
+  z-index:-4			
+}
+
+
 #img {
         
         right: 0;
@@ -35,6 +137,7 @@
     }
 
 /* Flashlight Overlay */
+
 :root {
     cursor: none;
     --cursorX: 50vw;
@@ -54,6 +157,7 @@
       rgb(0, 0, 0) 100%
     )
   }
+  
 
 /* audio */
 audio {display:none;}
