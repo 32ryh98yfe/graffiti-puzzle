@@ -1,13 +1,11 @@
-#thankyou {
-    clear: both;   
-    margin: -400 0 0 20; 
-}
+﻿#thankyou {
+margin: 5px;
+        }
 
 
 body {
-    font-family: 'Noto Sans KR', sans-serif; font-weight: 400;
+    font-family: 'Noto Sans KR', sans-serif; font-weight: 300;
     /*background-color: greenyellow;*/
-    background: repeating-linear-gradient(-45deg, #a6fd19, #a6fd19 5px, #222222 5px, #222222 10px);*/
     margin:0;
     
 }
