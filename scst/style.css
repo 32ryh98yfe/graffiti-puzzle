@@ -1,3 +1,7 @@
+body {
+  font-family: 'Noto Sans KR', sans-serif; font-weight: 300;
+}
+
 .map{
     display: block;
     position: fixed;				
@@ -100,28 +104,142 @@
   position: fixed;
   right: 40%;
   top: 27%;
-  z-index:-4			
+  z-index:-4	;		
 }
+.pin20_t{
+  width: 2.5rem;
+  height: 2.5rem;
+  position: fixed;
+  opacity: 0%;
+  right: 40%;
+  top: 27%;
+  z-index:1;
+  cursor: pointer;		
+}
+
 .pin21{
   width: 2.5rem;
   height: 2.5rem;
   position: fixed;
-  right: 70%;
-  top: 40%;
-  z-index:-4			
+  right: 24%;
+  bottom: 14%;
+  z-index:-4	;		
 }
+
+.pin21_t{
+  width: 2.5rem;
+  height: 2.5rem;
+  position: fixed;
+  right: 24%;
+  bottom: 14%;
+  z-index:1;
+  opacity: 0%;	
+  cursor: pointer;		
+}
+
 .pin22{
   width: 2.5rem;
   height: 2.5rem;
   position: fixed;
   right: 80%;
   bottom: 28%;
-  z-index:-4			
+  z-index:-4	;		
+}
+
+.pin22_t{
+  width: 2.5rem;
+  height: 2.5rem;
+  position: fixed;
+  right: 80%;
+  bottom: 28%;
+  z-index: 1;
+  opacity: 0%;	
+  cursor: pointer;	
+}
+
+.pin23{
+  width: 2.5rem;
+  height: 2.5rem;
+  position: fixed;
+  right: 50%;
+  bottom: 50%;
+  z-index:-4;			
+}
+
+.pin23_t{
+  width: 2.5rem;
+  height: 2.5rem;
+  position: fixed;
+  right: 50%;
+  bottom: 50%;
+  z-index: 1;
+  opacity: 0%;	
+  cursor: pointer;	
+}
+
+.pin24{
+  width: 2.5rem;
+  height: 2.5rem;
+  position: fixed;
+  right: 53%;
+  bottom: 50%;
+  z-index:-4;	
+  cursor: pointer;	
+}
+
+.pin24_t{
+  width: 2.5rem;
+  height: 2.5rem;
+  position: fixed;
+  right: 50%;
+  bottom: 50%;
+  z-index: 1;
+  opacity: 0%;	
+  cursor: pointer;	
+}
+
+.pin25{
+  width: 2.5rem;
+  height: 2.5rem;
+  position: fixed;
+  top:15%;
+  left:20%;
+  z-index:-4;			
+}
+
+.pin25_t{
+  width: 2.5rem;
+  height: 2.5rem;
+  position: fixed;
+  top:15%;
+  left:20%;
+  z-index: 1;
+  opacity: 0%;	
+  cursor: pointer;	
+}
+
+.pin26{
+  width: 2.5rem;
+  height: 2.5rem;
+  position: fixed;
+  bottom:15%;
+  left:50%;
+  z-index:-4;			
+}
+
+.pin26_t{
+  width: 2.5rem;
+  height: 2.5rem;
+  position: fixed;
+  bottom:15%;
+  left:50%;
+  z-index: 1;
+  opacity: 0%;	
+  cursor: pointer;	
 }
 
 
 #img {
-        
         right: 0;
         bottom: 0;
         left: -1000%;
@@ -161,3 +279,130 @@
 
 /* audio */
 audio {display:none;}
+
+
+/* toast message */
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: rgb(37, 37, 37); /* Black background color */
+  color: rgb(235, 235, 235); /* White text color */
+  text-align: center; /* Centered text */
+  font-size: 15px;
+  border-radius: 0px; /* Rounded borders */
+  padding: 10px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; /* Add a z-index if needed */
+  left: 50%; /* Center the snackbar */
+  top: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 4.5s;
+  animation: fadein 0.5s, fadeout 0.5s 4.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {top: 0; opacity: 0;}
+  to {top: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {top: 0; opacity: 0;}
+  to {top: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {top: 30px; opacity: 1;}
+  to {top: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {top: 30px; opacity: 1;}
+  to {top: 0; opacity: 0;}
+}
+
+
+
+
+
+
+/* modal image */
+#myImg {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 4%; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: disable; /* Enable scroll if needed */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 70%;
+}
+
+
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #7c7c7c;
+  font-size: 40px;
+  font-weight: medium;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}

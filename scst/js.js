@@ -19,3 +19,21 @@ function update(e){
     hz.src = $mp3;
     hz.play();
 }
+
+
+
+
+// toast message
+
+window.onload = pageLoad;
+    function pageLoad() {
+     
+      var x = document.getElementById("snackbar");
+      x.className = "show";
+      setTimeout(function(){ x.className = x.className.replace("show", ""); }, 5000);
+
+    };
+
+
+
+    
